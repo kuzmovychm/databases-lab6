@@ -1,1 +1,1 @@
-# databases-lab6
+# databases

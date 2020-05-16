@@ -2,7 +2,7 @@ FROM maven:3-jdk-11-openj9 as build
 WORKDIR /
 VOLUME /tmp
 ADD . .
-RUN mvn clean package
+RUN mvn clean package -DskipTests
 
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp

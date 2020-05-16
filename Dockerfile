@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-jdk-alpine as rest-service
 VOLUME /tmp
 EXPOSE 8080
 ARG JAR_FILE=target/*.jar
